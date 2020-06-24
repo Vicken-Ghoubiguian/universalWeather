@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ericg\\source\\repos\\universalweather\\universalweather\\universalweather.csproj",
+      "projectUniqueName": "C:\\Users\\ericg\\source\\repos\\universalweather\\universalweather.csproj",
       "projectName": "universalweather",
-      "projectPath": "C:\\Users\\ericg\\source\\repos\\universalweather\\universalweather\\universalweather.csproj",
+      "projectPath": "C:\\Users\\ericg\\source\\repos\\universalweather\\universalweather.csproj",
       "packagesPath": "C:\\Users\\ericg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ericg\\source\\repos\\universalweather\\universalweather\\obj\\",
+      "outputPath": "C:\\Users\\ericg\\source\\repos\\universalweather\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
