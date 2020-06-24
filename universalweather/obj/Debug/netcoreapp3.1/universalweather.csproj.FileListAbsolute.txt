@@ -1,0 +1,4 @@
+C:\Users\ericg\source\repos\universalweather\universalweather\obj\Debug\netcoreapp3.1\universalweather.csprojAssemblyReference.cache
+C:\Users\ericg\source\repos\universalweather\universalweather\obj\Debug\netcoreapp3.1\universalweather.AssemblyInfoInputs.cache
+C:\Users\ericg\source\repos\universalweather\universalweather\obj\Debug\netcoreapp3.1\universalweather.AssemblyInfo.cs
+C:\Users\ericg\source\repos\universalweather\universalweather\obj\Debug\netcoreapp3.1\universalweather.csproj.CoreCompileInputs.cache
