@@ -6,7 +6,7 @@ namespace universalweather.universalWeather
 {
     class weather
     {
-        /****   *****/
+        /**** weather class' attributes (to store each relative data)  *****/
 
         //
         private float longitude;
@@ -43,7 +43,7 @@ namespace universalweather.universalWeather
         private int uvIndex;
         private string uvRisk;
 
-        /****   *****/
+        /**** weather class' properties (to return each relative data's corresponding value)  *****/
 
         //
         public float Longitude { get { return this.longitude; } }
