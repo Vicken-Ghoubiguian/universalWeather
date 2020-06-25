@@ -39,6 +39,10 @@ namespace universalweather.universalWeather
         private string countryCode;
         private string cityName;
 
+        //
+        private int uvIndex;
+        private string uvRisk;
+
         /****   *****/
 
         //
@@ -71,6 +75,10 @@ namespace universalweather.universalWeather
         //
         public string CountryCode { get { return this.countryCode; } }
         public string CityName { get { return this.cityName; } }
+
+        //
+        public int UvIndex { get { return this.uvIndex; } }
+        public string UvRisk { get { return this.uvRisk; } }
 
         weather()
         {
