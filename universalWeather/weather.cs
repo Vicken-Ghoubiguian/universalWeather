@@ -6,6 +6,7 @@ using System.Text;
 
 namespace universalweather.universalWeather
 {
+    // Definition of the weather class
     class weather
     {
         /**** weather class' attributes (to store each relative data)  *****/
@@ -82,7 +83,7 @@ namespace universalweather.universalWeather
         public int UvIndex { get { return this.uvIndex; } }
         public string UvRisk { get { return this.uvRisk; } }
 
-        //
+        //Constructeur de la classe weather
         weather(string city, string openWeatherMapApiKey)
         {
             // URL definition to get all datas about weather 
