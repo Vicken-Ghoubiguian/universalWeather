@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace universalweather.universalWeather
@@ -80,9 +82,11 @@ namespace universalweather.universalWeather
         public int UvIndex { get { return this.uvIndex; } }
         public string UvRisk { get { return this.uvRisk; } }
 
-        weather()
+        //
+        weather(string city, string openWeatherMapApiKey)
         {
-
+            // URL definition to get all datas about weather 
+            string url = String.Concat("https://api.openweathermap.org/data/2.5/weather?q=", city, "&appid=", openWeatherMapApiKey);
         }
     }
 }
