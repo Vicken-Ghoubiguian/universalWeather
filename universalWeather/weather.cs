@@ -100,6 +100,7 @@ namespace universalweather.universalWeather
             using (HttpWebResponse weatherRequestResponse = (HttpWebResponse)weatherRequest.GetResponse())
             {
                 // Do something with the response
+                Console.WriteLine(weatherRequestResponse.StatusCode);
             }
         }
     }
