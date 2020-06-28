@@ -118,7 +118,7 @@ namespace universalweather.universalWeather
         //Main function to test the current api
         public static void Main()
         {
-            Weather weatherTest = new Weather("Paris", "5222a1c311ca31001b0877137d584c36");
+            Weather weatherTest = new Weather("<city>", "<apiKey>");
         }
     }
 }
