@@ -6,7 +6,7 @@ using System.Text;
 namespace universalweather.universalWeather
 {
     // Definition of the weather class
-    class Weather
+    class UniversalWeather
     {
         /**** weather class' attributes (to store each relative data)  *****/
 
@@ -83,7 +83,7 @@ namespace universalweather.universalWeather
         public string UvRisk { get { return this.uvRisk; } }
 
         //Class Weather's constructor
-        Weather(string city, string openWeatherMapApiKey)
+        UniversalWeather(string city, string openWeatherMapApiKey)
         {
             // URL definition to get all datas about weather 
             string url = String.Concat("https://api.openweathermap.org/data/2.5/weather?q=", city, "&appid=", openWeatherMapApiKey);
@@ -118,8 +118,8 @@ namespace universalweather.universalWeather
         //Main function to test the current api
         public static void Main()
         {
-            //Creation of the current instance of Weather class: weatherTest
-            Weather weatherTest = new Weather("<city>", "<apiKey>");
+            //Creation of the current instance of UniversalWeather class: universalWeatherTest
+            UniversalWeather universalWeatherTest = new UniversalWeather("<city>", "<apiKey>");
         }
     }
 }
