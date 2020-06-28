@@ -82,7 +82,7 @@ namespace universalweather.universalWeather
         public int UvIndex { get { return this.uvIndex; } }
         public string UvRisk { get { return this.uvRisk; } }
 
-        //Constructeur de la classe weather
+        //Class Weather's constructor
         Weather(string city, string openWeatherMapApiKey)
         {
             // URL definition to get all datas about weather 
@@ -118,6 +118,7 @@ namespace universalweather.universalWeather
         //Main function to test the current api
         public static void Main()
         {
+            //Creation of the current instance of Weather class: weatherTest
             Weather weatherTest = new Weather("<city>", "<apiKey>");
         }
     }
