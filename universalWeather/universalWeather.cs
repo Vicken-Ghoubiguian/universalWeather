@@ -103,6 +103,7 @@ namespace universalweather.universalWeather
                 // Get the HTTP request's status description
                 string statusDescription = ((HttpWebResponse)weatherResponse).StatusDescription;
 
+                // If the Http status' code is 200 (success)...
                 if (statusCode == 200)
                 {
                     // Get the stream containing content returned by the server.
@@ -122,7 +123,7 @@ namespace universalweather.universalWeather
                     // Close the response.
                     weatherResponse.Close();
                 }
-                // Sinon...
+                // Else...
                 else
                 {
                     // Display Http error code and it's description
