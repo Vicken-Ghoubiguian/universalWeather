@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 
 namespace universalweather.universalWeather
 {
     // Definition of the weather class
-    class weather
+    class Weather
     {
         /**** weather class' attributes (to store each relative data)  *****/
 
@@ -85,23 +83,42 @@ namespace universalweather.universalWeather
         public string UvRisk { get { return this.uvRisk; } }
 
         //Constructeur de la classe weather
-        weather(string city, string openWeatherMapApiKey)
+        Weather(string city, string openWeatherMapApiKey)
         {
             // URL definition to get all datas about weather 
             string url = String.Concat("https://api.openweathermap.org/data/2.5/weather?q=", city, "&appid=", openWeatherMapApiKey);
 
-            //
-            HttpWebRequest weatherRequest = WebRequest.CreateHttp(url);
+            // Create a request for the URL.
+            WebRequest weatherRequest = WebRequest.Create(url);
 
-            //
-            weatherRequest.Method = "GET";
+            // Get the response.
+            WebResponse weatherResponse = weatherRequest.GetResponse();
 
-            //
-            using (HttpWebResponse weatherRequestResponse = (HttpWebResponse)weatherRequest.GetResponse())
+            // Display the status.
+            Console.WriteLine(((HttpWebResponse)weatherResponse).StatusDescription);
+
+            // Get the stream containing content returned by the server.
+            // The using block ensures the stream is automatically closed.
+            using (Stream weatherDataStream = weatherResponse.GetResponseStream())
             {
-                // Do something with the response
-                Console.WriteLine(weatherRequestResponse.StatusCode);
+                // Open the stream using a StreamReader for easy access.
+                StreamReader weatherReader = new StreamReader(weatherDataStream);
+
+                // Read the content.
+                string weatherResponseFromServer = weatherReader.ReadToEnd();
+
+                // Display the content.
+                Console.WriteLine(weatherResponseFromServer);
             }
+
+            // Close the response.
+            weatherResponse.Close();
+        }
+
+        //Main function to test the current api
+        public static void Main()
+        {
+            Weather weatherTest = new Weather("Paris", "5222a1c311ca31001b0877137d584c36");
         }
     }
 }
