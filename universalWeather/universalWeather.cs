@@ -94,25 +94,40 @@ namespace universalweather.universalWeather
             // Get the response.
             WebResponse weatherResponse = weatherRequest.GetResponse();
 
-            // Display the status.
-            Console.WriteLine(((HttpWebResponse)weatherResponse).StatusDescription);
+            // Get the HTTP request's status code
+            int statusCode = (int)((HttpWebResponse)weatherResponse).StatusCode;
 
-            // Get the stream containing content returned by the server.
-            // The using block ensures the stream is automatically closed.
-            using (Stream weatherDataStream = weatherResponse.GetResponseStream())
+            // Get the HTTP request's status description
+            string statusDescription = ((HttpWebResponse)weatherResponse).StatusDescription;
+
+            if (statusCode == 200)
             {
-                // Open the stream using a StreamReader for easy access.
-                StreamReader weatherReader = new StreamReader(weatherDataStream);
+                // Get the stream containing content returned by the server.
+                // The using block ensures the stream is automatically closed.
+                using (Stream weatherDataStream = weatherResponse.GetResponseStream())
+                {
+                    // Open the stream using a StreamReader for easy access.
+                    StreamReader weatherReader = new StreamReader(weatherDataStream);
 
-                // Read the content.
-                string weatherResponseFromServer = weatherReader.ReadToEnd();
+                    // Read the content.
+                    string weatherResponseFromServer = weatherReader.ReadToEnd();
 
-                // Display the content.
-                Console.WriteLine(weatherResponseFromServer);
+                    // Display the content.
+                    Console.WriteLine(weatherResponseFromServer);
+                }
+
+                // Close the response.
+                weatherResponse.Close();
             }
+            // Sinon...
+            else
+            {
+                // Display Http error code and it's description
+                Console.WriteLine("Error " + statusCode + " : " + statusDescription + "\n");
 
-            // Close the response.
-            weatherResponse.Close();
+                // Exit the current application with code -1
+                System.Environment.Exit(-1);
+            }
         }
 
         //Main function to test the current api
