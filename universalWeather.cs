@@ -145,12 +145,5 @@ namespace universalweather
                 System.Environment.Exit(-1);
             }
         }
-
-        //Main function to test the current api
-        public static void Main()
-        {
-            //Creation of the current instance of UniversalWeather class: universalWeatherTest
-            UniversalWeather universalWeatherTest = new UniversalWeather("<city>", "<apiKey>");
-        }
     }
 }
