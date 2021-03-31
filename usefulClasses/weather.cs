@@ -4,7 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    class weather
+    class Weather
     {
     }
 }
