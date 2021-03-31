@@ -7,7 +7,7 @@ using System.Text;
 // Using all useful classes defined in the package...
 using universalweather.usefulClasses;
 
-namespace universalweather.universalWeather
+namespace universalweather
 {
     // Definition of the weather class
     class UniversalWeather
