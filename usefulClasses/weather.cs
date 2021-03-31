@@ -4,6 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
+    // Defining the Weather class
     class Weather
     {
         int id;

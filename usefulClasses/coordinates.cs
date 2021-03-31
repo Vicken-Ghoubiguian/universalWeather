@@ -4,6 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
+    // Defining the Coordinates class
     class Coordinates
     {
         float longitude;

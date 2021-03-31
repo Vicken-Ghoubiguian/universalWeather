@@ -4,6 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
+    // Defining the Temperature class
     class Temperature
     {
         float temperatureValue;
