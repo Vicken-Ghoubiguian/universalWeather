@@ -6,5 +6,7 @@ namespace universalweather.usefulClasses
 {
     class Coordinates
     {
+        float longitude;
+        float latitude;
     }
 }

@@ -4,10 +4,10 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    class Pressure
+    enum temperatureUnit
     {
-        float value;
-        pressureUnit scaleUnit;
-        String symbolUnit;
+        Kelvin,
+        Celsius,
+        Fahrenheit
     }
 }

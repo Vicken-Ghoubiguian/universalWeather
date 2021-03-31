@@ -4,10 +4,13 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    class Pressure
+    enum pressureUnit
     {
-        float value;
-        pressureUnit scaleUnit;
-        String symbolUnit;
-    }
+		HectoPascal,
+		Pascal,
+		Bar,
+		Atmosphere,
+		Torr,
+		PoundsPerSquareInch
+	}
 }

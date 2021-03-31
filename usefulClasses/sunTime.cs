@@ -6,5 +6,9 @@ namespace universalweather.usefulClasses
 {
     class SunTime
     {
+        String sunTimeInCurrentFormat;
+        sunTimeFormat currentFormat;
+        String currentDateSeparator;
+        int asTimestamp;
     }
 }

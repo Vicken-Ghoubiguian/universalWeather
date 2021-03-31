@@ -6,5 +6,8 @@ namespace universalweather.usefulClasses
 {
     class Temperature
     {
+        float temperatureValue;
+        temperatureUnit currentTemperatureScale;
+        String temperatureScaleSymbol;
     }
 }

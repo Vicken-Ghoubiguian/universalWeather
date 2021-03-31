@@ -6,5 +6,9 @@ namespace universalweather.usefulClasses
 {
     class Weather
     {
+        int id;
+        String main;
+        String description;
+        String iconUrl;
     }
 }

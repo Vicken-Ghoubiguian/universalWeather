@@ -6,5 +6,7 @@ namespace universalweather.usefulClasses
 {
     class GeographicLocation
     {
+        String countryCode;
+        String cityName;
     }
 }

@@ -6,5 +6,7 @@ namespace universalweather.usefulClasses
 {
     class Humidity
     {
+        int value;
+        String unitScale;
     }
 }

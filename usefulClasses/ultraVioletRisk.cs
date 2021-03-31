@@ -4,10 +4,12 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    class Pressure
+    enum ultraVioletRisk
     {
-        float value;
-        pressureUnit scaleUnit;
-        String symbolUnit;
+        Low,
+        Moderate,
+        High,
+        Very_High,
+        Extreme
     }
 }

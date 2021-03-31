@@ -4,10 +4,11 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    class Pressure
+    enum sunTimeFormat
     {
-        float value;
-        pressureUnit scaleUnit;
-        String symbolUnit;
+        Timestamp,
+        DMYHMSFormat,
+        YMDHMSFormat,
+        MDYHMSFormat
     }
 }

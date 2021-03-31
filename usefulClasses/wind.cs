@@ -6,5 +6,8 @@ namespace universalweather.usefulClasses
 {
     class Wind
     {
+        float windSpeed;
+        int windDeg;
+        float windGust;
     }
 }
