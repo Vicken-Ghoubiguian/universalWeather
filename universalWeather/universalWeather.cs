@@ -1,7 +1,11 @@
-﻿using System;
+﻿// Add primarly namespaces...
+using System;
 using System.IO;
 using System.Net;
 using System.Text;
+
+// Using all useful classes defined in the package...
+using universalweather.usefulClasses;
 
 namespace universalweather.universalWeather
 {
