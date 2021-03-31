@@ -8,7 +8,7 @@ namespace universalweather.usefulClasses
     class Pressure
     {
         float value;
-        pressureUnit scaleUnit;
+        PressureUnit scaleUnit;
         String symbolUnit;
     }
 }

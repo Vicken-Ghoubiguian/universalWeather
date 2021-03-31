@@ -4,8 +4,8 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    // Defining the sunTimeFormat enum
-    enum sunTimeFormat
+    // Defining the SunTimeFormat enum
+    enum SunTimeFormat
     {
         Timestamp,
         DMYHMSFormat,

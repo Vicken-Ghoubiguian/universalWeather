@@ -8,6 +8,6 @@ namespace universalweather.usefulClasses
     class UltraViolet
     {
         int index;
-        ultraVioletRisk risk;
+        UltraVioletRisk risk;
     }
 }

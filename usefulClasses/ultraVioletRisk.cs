@@ -4,8 +4,8 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-    // Defining the ultraVioletRisk enum
-    enum ultraVioletRisk
+    // Defining the UltraVioletRisk enum
+    enum UltraVioletRisk
     {
         Low,
         Moderate,
