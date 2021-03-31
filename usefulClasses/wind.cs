@@ -4,6 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
+    // Defining the Wind class
     class Wind
     {
         float windSpeed;

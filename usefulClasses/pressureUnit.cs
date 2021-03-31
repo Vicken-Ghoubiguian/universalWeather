@@ -4,7 +4,7 @@ using System.Text;
 
 namespace universalweather.usefulClasses
 {
-	// Defining the pressureUnit enum
+	// Defining the PressureUnit enum
 	enum PressureUnit
     {
 		HectoPascal,
